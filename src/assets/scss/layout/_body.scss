@@ -207,31 +207,27 @@ body{
                             display: none;
                             font-size: 26px;
                             color : $color-bg-list;
-
-                            &:hover{
-                                display: block;
-                            }
                         }
                         
                         .fa-regular{
                             font-size: 26px;
                             font-weight: 100;
 
-                            &:not(:hover){
-                                display: block;
-                            }
+                            // &:not(:hover){
+                            //     display: block;
+                            // }
 
-                            &:hover{
-                                display: none;
-                            }
-                        }
-
-                        .fa-regular:hover .fa-solid{
-                            display: block;
+                            // &:hover{
+                            //     display: none;
+                            // }
                         }
                     }
                 }
             }
         }
     }
+}
+
+.fa-regular.fa-heart.like:hover{
+    display: none;
 }
