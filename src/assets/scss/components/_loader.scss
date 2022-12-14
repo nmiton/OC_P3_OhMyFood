@@ -4,7 +4,7 @@
     text-align: center;
     animation: disparition 5s forwards;
     position: absolute;
-    height: 100%;
+    height: 100vh;
     background-color: $color-bg-white;
     z-index: 1000;
     // display: none;
@@ -12,7 +12,7 @@
     .lds-roller {
         display: inline-block;
         position: relative;
-        margin-top: 50%;
+        margin-top: 40vh;
         width: 80px;
         height: 80px;
     

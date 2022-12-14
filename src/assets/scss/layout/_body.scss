@@ -45,23 +45,6 @@ body{
                     width: 600px;
                 }
             }
-    
-            a{
-                text-decoration: none;
-                color: $color-primary-white;
-                background-color: $color-btn-explore;
-                background: $linear-gradient;
-                border: 1px solid;
-                padding: 1rem;
-                border-radius: 25px;
-                box-shadow: $box-shadow-btn;
-                cursor: pointer;
-
-                &:hover{
-                    filter: brightness(1.1);
-                    box-shadow: $box-shadow-btn-hover;
-                }
-            }
         }
     
         .fonctionnement{
@@ -83,11 +66,11 @@ body{
                 li{
                     position: relative;
                     padding: 1.5rem;
-                    border: 0.2px solid;
+                    border: 0.1px solid $color-bg-grey;
                     border-radius: 20px;
-                    margin-bottom: 0.75rem;
+                    margin-bottom: 1rem;
                     font-weight: bold;
-                    box-shadow: $box-shadow-btn;
+                    box-shadow: $box-shadow-list;
 
                     @include respond(lg){
                         width: 300px;
@@ -123,86 +106,6 @@ body{
                 @include respond(lg){
                     display: flex;
                     justify-content: space-evenly;
-                }
-            }
-        }
-    
-        #restaurants{
-            padding: 2.5rem 1.5rem 3.5rem 1.5rem;
-            background-color: $color-bg-grey;
-
-            .liste-restaurants{
-
-                @include respond(md){
-                    display: grid;
-                    grid-template-columns: repeat(2,1fr);
-                    gap: 1rem;
-                }
-
-                @include respond(lg){
-                    grid-template-columns: repeat(4,1fr);
-                }
-            }
-    
-            h2{
-                padding-bottom: 1rem;
-                font-weight: 700;
-                font-size: 20px;
-            }
-    
-            .card-restaurant{
-                margin-bottom: 1rem;
-                box-shadow: $box-shadow;
-                border-radius: 20px;
-
-                &:hover{
-                    transform: scale(1.01);
-                }
-                
-                .img-restaurant{
-                    position: relative;
-    
-                    img{
-                        border-radius : 20px 20px 0 0;
-                        height: 10rem;
-                        width: 100%;
-                        object-fit: cover;
-                    }
-    
-                    .nouveau{
-                        position: absolute;
-                        top: 1rem;
-                        right :1rem;
-                        border: 1px;
-                        background-color: $color-bg-new;
-                        padding: 0.5rem 0.75rem;
-                        color: $color-new;
-                        font-weight: 600;
-                    }
-                }
-    
-                .infos-restaurant{
-                    background-color: $color-bg-white;
-                    display: flex;
-                    justify-content: space-between;
-                    border-radius: 0 0 20px 20px;
-    
-                    .nom-restaurant{
-                        padding: 1rem;
-                        display: flex;
-                        flex-direction: column;
-                        background-color: $color-bg-white;
-                        width: 80%;
-                        border-radius: 20px;
-
-                        h3{
-                            margin-bottom: 0.5rem;
-                        }
-                    }
-    
-                    .like-restaurant{
-                        margin: 1rem 1.5rem;
-                    }
                 }
             }
         }

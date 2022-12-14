@@ -23,32 +23,13 @@
 .page-restaurant{    
     background-color: $color-bg-white;
     .img-presentation-restaurant{
-        height: 30%;
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-color: $color-bg-white;
-        background-position: center;
-
-        @include respond(lg){
-            height: 45%;
+        height: 300px;
+        img{
+            height: 100%;
+            width: 100%;
+            background-color: $color-bg-white;
+            object-fit: cover;
         }
-    }
-
-    .aLaFrancaise{
-        background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-    }
-
-    .laNoteEnchantee{
-        background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-    }
-
-    .leDeliceDesSens{
-        background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-    }
-
-    .laPaletteDuGout{
-        background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-
     }
 
     .nom-restaurant-page{
@@ -58,6 +39,8 @@
         justify-content: space-between;
         border-radius: 35px 35px 0 0;
         margin-top: -30px;
+        position: relative;
+        z-index: 1000;
 
         h1{
             font-weight: 600;
@@ -77,101 +60,11 @@
     .btn-commander{
         margin: 1rem 25% 2rem 25%;
         width: 50%;
+        font-size: 16px;
 
         @include respond(lg){
             width: 33%;
             margin: 1rem 33% 2rem 33%;
-        }
-    }
-
-    .menu-restaurant{
-        padding: 0 1rem;
-
-        @include respond(lg){
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 1rem;
-        }
-
-        .section{
-            padding-bottom:1rem;
-        }
-
-        .border{
-            border-bottom: 3px solid $color-bg-new;
-            width: 45px;
-            margin-top: 0.25rem;
-        }
-
-        .entete{
-            padding: 1rem 0; 
-        }
-
-        @for $i from 1 through 20 {
-            .animation-#{$i} {
-                animation : fadeIn #{$i}s
-            }
-        }
-
-        .plats{
-            .plat{
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 0.5rem;
-                .card-plat{
-                    width: 100%;
-                    background-color: $color-primary-white;
-                    display: flex;
-                    border-radius: 20px;
-                    box-shadow: $box-shadow;
-                    margin-bottom: 0.5rem;
-
-                    .infos-plat{
-                        width: 80%;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        padding: 0.75rem 2rem 0.75rem 1rem;
-
-                        h3{
-                            margin-bottom: 0.5rem;
-                        }
-                    }
-                    .prix{
-                        position: relative;
-                        width: 20%;
-                        span{
-                            position: absolute;
-                            bottom: 19%;
-                            right: 30%;
-                            font-weight: bold;
-                        }
-                    }
-                    .selection{
-                        padding: 1rem;
-                        display: none;
-                        border-radius: 0 20px 20px 0;
-                        background-color: $color-bg-new;
-                        width: 50px;
-                        i{
-                            margin-top: 5px;
-                            margin-left: 23%;
-                            font-size: 22px;
-                            color: $color-primary-white;
-                        }
-                    }
-                    &:hover .selection{
-                        display: block;
-                        cursor: pointer;
-                        animation: arrivee 0.1s;
-                        box-shadow: $box-shadow; 
-                    }
-                }
-
-                &:hover .selection i{
-                    animation: rotate 0.5s;
-                }
-            }
         }
     }
 }

@@ -1,0 +1,90 @@
+.menu-restaurant{
+    padding: 0 1rem;
+
+    @include respond(lg){
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+
+    .section{
+        padding-bottom:1rem;
+    }
+
+    .border{
+        border-bottom: 3px solid $color-bg-new;
+        width: 45px;
+        margin-top: 0.25rem;
+    }
+
+    .entete{
+        padding: 1rem 0; 
+    }
+
+    @for $i from 1 through 20 {
+        .animation-#{$i} {
+            animation : fadeIn #{$i}s
+        }
+    }
+
+    .plats{
+        .plat{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0.5rem;
+            .card-plat{
+                width: 100%;
+                background-color: $color-primary-white;
+                display: flex;
+                border-radius: 20px;
+                box-shadow: $box-shadow;
+                margin-bottom: 0.5rem;
+
+                .infos-plat{
+                    width: 80%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    padding: 0.75rem 2rem 0.75rem 1rem;
+
+                    h3{
+                        margin-bottom: 0.5rem;
+                    }
+                }
+                .prix{
+                    position: relative;
+                    width: 20%;
+                    span{
+                        position: absolute;
+                        bottom: 19%;
+                        right: 30%;
+                        font-weight: bold;
+                    }
+                }
+                .selection{
+                    padding: 1rem;
+                    display: none;
+                    border-radius: 0 20px 20px 0;
+                    background-color: $color-bg-new;
+                    width: 50px;
+                    i{
+                        margin-top: 5px;
+                        margin-left: 23%;
+                        font-size: 22px;
+                        color: $color-primary-white;
+                    }
+                }
+                &:hover .selection{
+                    display: block;
+                    cursor: pointer;
+                    animation: arrivee 0.1s;
+                    box-shadow: $box-shadow; 
+                }
+            }
+
+            &:hover .selection i{
+                animation: rotate 0.5s;
+            }
+        }
+    }
+}
