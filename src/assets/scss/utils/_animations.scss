@@ -9,12 +9,14 @@
 
 @keyframes disparition {
     0% {
-        visibility: visible;
         opacity: 1;
+        visibility: visible;
+        display: block;
     }
     100% {
-        visibility: hidden;
         opacity: 0;
+        visibility: hidden;
+        display: none;
     }
 }    
 

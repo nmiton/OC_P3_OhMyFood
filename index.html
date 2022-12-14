@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -17,6 +18,18 @@
         </a>
     </header>
     <main>
+        <div class="container-loader">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <div class="location">
             <i class="fa-solid fa-location-dot"></i>
             <input type="text" name="input-location" id="location" value="Paris, Belleville">
@@ -24,7 +37,7 @@
         <div class="reservation">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, séléctionnées par nos soins.</p>
-            <a href="#restaurants">Explorer nos restaurants</a>
+            <a href="#restaurants" class="btn">Explorer nos restaurants</a>
         </div>
         <div class="fonctionnement">
             <h2>Fonctionnement</h2>
@@ -48,20 +61,6 @@
         </div>
         <div id="restaurants">
             <h2>Restaurants</h2>
-
-            <div class="container-loader">
-                <div class="lds-roller">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-
             <div class="liste-restaurants">
                 <div class="card-restaurant">
                     <a href="/pages/laPaletteDuGout.html">
@@ -76,7 +75,7 @@
                             </div>
                             <div class="like-restaurant">
                                 <i class="fa-regular fa-heart like"></i>
-                                <i class="fa fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-heart after-like"></i>
                             </div>
                         </div>
                     </a>
@@ -94,7 +93,7 @@
                             </div>
                             <div class="like-restaurant">
                                 <i class="fa-regular fa-heart like"></i>
-                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-heart after-like"></i>
                             </div>
                         </div>
                     </a>
@@ -111,7 +110,7 @@
                             </div>
                             <div class="like-restaurant">
                                 <i class="fa-regular fa-heart like"></i>
-                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-heart after-like"></i>
                             </div>
                         </div>
                     </a>
@@ -128,7 +127,7 @@
                             </div>
                             <div class="like-restaurant">
                                 <i class="fa-regular fa-heart like"></i>
-                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-heart after-like"></i>
                             </div>
                         </div>
                     </a>

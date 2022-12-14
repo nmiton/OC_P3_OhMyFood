@@ -1,0 +1,17 @@
+.btn{
+    text-decoration: none;
+    color: $color-primary-white;
+    background-color: $color-btn-explore;
+    background: $linear-gradient;
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: $box-shadow-btn;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+
+    &:hover{
+        filter: brightness(1.1);
+        box-shadow: $box-shadow-btn-hover;
+    }
+}

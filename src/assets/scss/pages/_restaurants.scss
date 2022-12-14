@@ -73,44 +73,10 @@
                 color: red;
             }
         }
-
-
-        .fa-solid{
-            display: none;
-            color : $color-bg-list;
-
-            &:hover{
-                display: block;
-            }
-        }
-        
-        .fa-regular{
-            font-size: 26px;
-            font-weight: 100;
-
-
-            &:hover{
-                display: none;
-            }
-        }
     }
     .btn-commander{
-        color: $color-primary-white;
-        background-color: $color-btn-explore;
-        background: $linear-gradient;
-        border: 1px solid;
-        padding: 1rem;
-        border-radius: 25px;
         margin: 1rem 25% 2rem 25%;
         width: 50%;
-        font-size: 18px;
-        box-shadow: $box-shadow-btn;
-        cursor: pointer;
-
-        &:hover{
-            filter: brightness(1.1);
-            box-shadow: $box-shadow-btn-hover;
-        }
 
         @include respond(lg){
             width: 33%;
@@ -201,22 +167,6 @@
                         box-shadow: $box-shadow; 
                     }
                 }
-                
-
-
-
-                // &:hover .card-plat{
-                //     width: calc( 100% - 50px )
-                // }
-
-                // &:hover #accompagnement{
-                //     width: 50%;
-                //     color: red;
-                // }
-
-                // &:hover .card-plat{
-                //     border-radius: 20px 0 0 20px;
-                // }
 
                 &:hover .selection i{
                     animation: rotate 0.5s;

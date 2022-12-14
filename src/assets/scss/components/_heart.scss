@@ -1,0 +1,19 @@
+
+.fa-regular{
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.fa-solid.fa-heart.after-like{
+    display: none;
+    font-size: 26px;
+    color : $color-bg-list;
+}
+
+.fa-regular.fa-heart.like:hover{
+    display: none;
+}
+
+.fa-regular.fa-heart.like:hover + .after-like{
+    display: block;
+}
