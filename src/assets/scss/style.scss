@@ -1,0 +1,11 @@
+@import 'base/_reset.scss';
+@import 'abstracts/_variables.scss';
+@import 'mixins/_responsive.scss';
+
+@import 'layout/_header.scss';
+@import 'layout/_body.scss';
+@import 'layout/_footer.scss';
+
+@import 'pages/_restaurants.scss';
+@import 'components/_loader.scss';
+@import 'utils/_animations.scss';

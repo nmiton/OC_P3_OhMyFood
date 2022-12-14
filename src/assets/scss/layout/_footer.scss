@@ -1,0 +1,29 @@
+footer{
+
+    background-color: $color-footer;
+    padding: 2rem 0 1rem 2rem;
+
+    img{
+        width: 100px;
+        margin-bottom: 1rem;
+        filter: invert(1);
+    }
+
+    ul{
+        list-style: none;
+        color: $color-primary-white;
+
+        li{
+            margin-bottom: 0.75rem;
+
+            i{
+                margin-right: 1rem;
+                width: 0.75rem;
+            }
+
+            .fa-handshake{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

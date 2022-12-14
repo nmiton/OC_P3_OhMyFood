@@ -1,0 +1,32 @@
+/** Fonts **/
+$font-size-default: 16px;
+$font-family-logo: 'Shrikhand', sans-serif;
+$font-family-text: 'Roboto', sans-serif;
+
+/** Colors **/
+$color-primary-black: #2A2B2D;
+$color-primary-white: #FFFFFF;
+
+$color-primary : #9656DC;
+$color-secondary : #FF79DA;
+$color-third : #99E2D0;
+
+$color-btn-explore : #b060dc;
+$color-heart : #c266db;
+$color-new : #008766;
+$color-footer : #353535; 
+$color-icon : #7e7e7e;
+$color-shadow : #d0d0d0;
+
+$color-bg-list : #9353dc;
+$color-bg-list-hover : #f5edff;
+$color-bg-white : #f7f7f7;
+$color-bg-new : #99e2d0;
+$color-bg-grey : #eaeaea;
+
+
+$linear-gradient: linear-gradient(172deg, rgba(228,112,219,1) 0%, rgba(223,111,219,1) 24%, rgba(190,100,220,1) 40%, rgba(172,94,220,1) 64%, rgba(159,90,220,1) 88%);
+
+$box-shadow : 0px 2px 2px $color-shadow;
+$box-shadow-btn : 1px 2px 10px 4px $color-shadow;
+$box-shadow-btn-hover : 2px 4px 10px 4px $color-shadow

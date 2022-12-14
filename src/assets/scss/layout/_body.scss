@@ -1,0 +1,237 @@
+body{
+    background-color:$color-primary-white;
+    font-family:$font-family-text;
+    main{
+        a{
+            color: $color-primary-black;
+            text-decoration: none;
+        }
+        .location{
+            background-color: $color-bg-grey;
+            padding: 1rem;
+            text-align: center;
+    
+            input{
+                border: none;
+                background-color: transparent;
+                text-align: center;
+                width: 115px;
+                font-weight:500;
+            }
+        }
+    
+        .reservation{
+            padding: 2.5rem 0 3.5rem 0;
+            text-align: center;
+            background-color: $color-bg-white;
+    
+            h1{
+                padding: 0 2rem;
+                width: 250px;
+                margin: 0 auto 1rem auto;
+                font-weight: 700;
+                font-size: 22px;
+
+                @include respond(md){
+                    width: 500px;
+                }
+            }
+    
+            p{
+                width: 300px;
+                margin: 0 auto 2.5rem auto;
+
+                @include respond(md){
+                    width: 600px;
+                }
+            }
+    
+            a{
+                text-decoration: none;
+                color: $color-primary-white;
+                background-color: $color-btn-explore;
+                background: $linear-gradient;
+                border: 1px solid;
+                padding: 1rem;
+                border-radius: 25px;
+                box-shadow: $box-shadow-btn;
+                cursor: pointer;
+
+                &:hover{
+                    filter: brightness(1.1);
+                    box-shadow: $box-shadow-btn-hover;
+                }
+            }
+        }
+    
+        .fonctionnement{
+            padding: 2.5rem 0.5rem 3.5rem 1.5rem;
+    
+            h2{
+                padding-bottom: 1.25rem;
+                font-weight: 700;
+                font-size: 20px;
+            }
+    
+            ul{
+                list-style: none;
+                margin-top: 1rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                position: relative;
+    
+                li{
+                    position: relative;
+                    padding: 1.5rem;
+                    border: 0.2px solid;
+                    border-radius: 20px;
+                    margin-bottom: 0.75rem;
+                    font-weight: bold;
+                    box-shadow: $box-shadow-btn;
+
+                    @include respond(lg){
+                        width: 300px;
+                    }
+
+                    span{
+                        position: absolute;
+                        padding: 6px 10px;
+                        background-color: $color-bg-list;
+                        color : $color-primary-white;
+                        border-radius: 100%;
+                        left: -15;
+                        top: 17;
+                    }
+
+                    i{
+                        margin-right: 1rem;
+                        margin-left: 1rem;
+                        width: 15px;
+                        color:$color-icon;
+                    }
+
+                    &:hover{
+                        background-color: $color-bg-list-hover;
+                        cursor: pointer;
+
+                        i{
+                            color : $color-bg-list;
+                        }
+                    }
+                }
+
+                @include respond(lg){
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    
+        #restaurants{
+            padding: 2.5rem 1.5rem 3.5rem 1.5rem;
+            background-color: $color-bg-grey;
+
+            .liste-restaurants{
+
+                @include respond(md){
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 1rem;
+                }
+
+                @include respond(lg){
+                    grid-template-columns: repeat(4,1fr);
+                }
+            }
+    
+            h2{
+                padding-bottom: 1rem;
+                font-weight: 700;
+                font-size: 20px;
+            }
+    
+            .card-restaurant{
+                margin-bottom: 1rem;
+                box-shadow: $box-shadow;
+                border-radius: 20px;
+
+                &:hover{
+                    transform: scale(1.01);
+                }
+                
+                .img-restaurant{
+                    position: relative;
+    
+                    img{
+                        border-radius : 20px 20px 0 0;
+                        height: 10rem;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+    
+                    .nouveau{
+                        position: absolute;
+                        top: 1rem;
+                        right :1rem;
+                        border: 1px;
+                        background-color: $color-bg-new;
+                        padding: 0.5rem 0.75rem;
+                        color: $color-new;
+                        font-weight: 600;
+                    }
+                }
+    
+                .infos-restaurant{
+                    background-color: $color-bg-white;
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 0 0 20px 20px;
+    
+                    .nom-restaurant{
+                        padding: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: $color-bg-white;
+                        width: 80%;
+                        border-radius: 20px;
+
+                        h3{
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+    
+                    .like-restaurant{
+                        margin: 1rem 1.5rem;
+
+                        .fa-solid{
+                            display: none;
+                            font-size: 26px;
+                            color : $color-bg-list;
+
+                            &:hover{
+                                display: block;
+                            }
+                        }
+                        
+                        .fa-regular{
+                            font-size: 26px;
+                            font-weight: 100;
+
+                            &:not(:hover){
+                                display: block;
+                            }
+
+                            &:hover{
+                                display: none;
+                            }
+                        }
+
+                        .fa-regular:hover .fa-solid{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
