@@ -10,10 +10,10 @@
     color : $color-bg-list;
 }
 
-.fa-regular.fa-heart.like:hover{
+.like-restaurant:hover .like {
     display: none;
 }
 
-.fa-regular.fa-heart.like:hover + .after-like{
-    display: block;
+.like-restaurant:hover .after-like {
+    display: initial;
 }
