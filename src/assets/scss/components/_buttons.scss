@@ -5,12 +5,12 @@
     background: $linear-gradient;
     padding: 1rem;
     border-radius: 25px;
-    box-shadow: $box-shadow-btn;
+    box-shadow: $box-shadow;
     cursor: pointer;
     border: none;
 
     &:hover{
         filter: brightness(1.1);
-        box-shadow: $box-shadow-btn-hover;
+        box-shadow: $box-shadow-hover;
     }
 }

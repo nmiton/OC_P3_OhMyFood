@@ -71,6 +71,7 @@ body{
                     margin-bottom: 1rem;
                     font-weight: bold;
                     box-shadow: $box-shadow-list;
+                    display: flex;
 
                     @include respond(lg){
                         width: 300px;
