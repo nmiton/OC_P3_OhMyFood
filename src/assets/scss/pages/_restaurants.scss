@@ -51,16 +51,11 @@
         i{
             font-size: 26px;
             cursor: pointer;
-
-            &:hover{
-                color: red;
-            }
         }
     }
     .btn-commander{
         margin: 1rem 25% 2rem 25%;
         width: 50%;
-        font-size: 16px;
 
         @include respond(lg){
             width: 33%;
