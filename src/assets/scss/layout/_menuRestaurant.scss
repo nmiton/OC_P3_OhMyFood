@@ -21,12 +21,6 @@
         padding: 1rem 0; 
     }
 
-    @for $i from 1 through 20 {
-        .animation-#{$i} {
-            animation : fadeIn #{$i}s
-        }
-    }
-
     .plats{
         .plat{
             display: flex;
@@ -54,6 +48,8 @@
                 .prix{
                     position: relative;
                     width: 20%;
+                    z-index: 1000;
+                    background-color: $color-bg-white;
                     span{
                         position: absolute;
                         bottom: 19%;

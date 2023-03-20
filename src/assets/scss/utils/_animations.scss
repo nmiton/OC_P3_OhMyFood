@@ -59,3 +59,9 @@
         transform: rotate(360deg);
     }
 }
+
+@for $i from 1 through 20 {
+    .animation-#{$i} {
+        animation : fadeIn #{$i}s
+    }
+}
